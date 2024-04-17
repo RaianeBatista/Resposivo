@@ -1,0 +1,331 @@
+/* Geral */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+p {
+  color: #70747a;
+}
+
+/* Navbar */
+.navbar-container {
+  width: 100%;
+  height: 80px;
+  background-color: #d28d44;
+  padding: 0 2rem;
+}
+
+nav {
+  position: relative;
+}
+
+.logo {
+  width: 100px;
+  margin-top: 5px;
+}
+
+.navbar-items {
+  position: absolute;
+  right: 0;
+  height: 80px;
+  line-height: 80px;
+  margin: 0;
+  display: inline-block;
+}
+
+.navbar-items li {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-left: 25px;
+}
+
+.navbar-items a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.navbar-items a:hover {
+  color: #ccc;
+}
+
+/* main banner */
+.main-banner {
+  background-image: url(../front-end-developer.png);
+  background-size: cover;
+  background-position: center;
+  padding: 17rem 0;
+}
+
+.main-banner h1,
+.main-banner p {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: #000 3px 2px 3px;
+}
+
+.main-banner h1 {
+  font-size: 60px;
+}
+
+.main-banner p {
+  font-size: 32px;
+}
+
+.skills {
+  font-size: 30px;
+  color: #333;
+  font-weight: bold;
+  margin-top: 60px;
+  text-align: center;
+}
+/* services */
+.services-container img {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.services-container {
+  padding: 5rem 0;
+}
+
+.services-container ul {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.services-container li {
+  flex: 1 1 200px;
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+}
+
+.me {
+  background-color: #d28d44;
+}
+.about-me h2 {
+  margin-left: 15px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.me {
+  background-color: #03297b;
+  height: 600px;
+}
+
+.sobre {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #e8b782;
+}
+
+.image {
+  margin-top: 50px;
+  width: 400px;
+
+  margin-left: 50px;
+}
+
+.about-me {
+  position: relative;
+}
+
+.curiosity {
+  color: #e8b782;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-top: -550px;
+  margin-left: 500px;
+  line-height: 100px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container-business {
+  display: flex;
+}
+
+.business-box {
+  margin-left: 60px;
+}
+
+.business-box h2 {
+  margin-top: 20px;
+  font-size: 40px;
+  padding: 10px;
+  margin-left: 100px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.business-box span {
+  color: red;
+}
+
+.business-box p {
+  margin-top: 1rem;
+  margin-left: 10rem;
+  margin-bottom: 10rem;
+  width: 40rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.box-link {
+  margin-right: 150px;
+}
+
+.what {
+  width: 200px;
+  margin-top: 70px;
+  margin-right: 60px;
+  opacity: 0.9;
+}
+
+.what:hover {
+  background-color: green;
+  transition: 0.4s;
+}
+
+.fale-comigo {
+  font-size: 30px;
+  opacity: 0.9;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.fale-comigo:hover {
+  color: green;
+  transition: 0.4s;
+}
+
+.social h2 {
+  margin-left: 30px;
+  padding: 5px;
+}
+
+a {
+  color: #333;
+  margin-top: 1rem;
+  margin-left: 2.5rem;
+  font-size: 20px;
+  opacity: 0.9;
+  font-weight: 600;
+}
+a:hover {
+  color: #03297b;
+}
+
+footer {
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  margin: 50px 0 50px;
+}
+
+/* responsividade */
+
+/* small laptops a partir de 1100px */
+@media (max-width: 1100px) {
+  .logo {
+    margin-top: 15px;
+  }
+
+  .navbar-container {
+    width: 100%;
+  }
+
+  .main-banner {
+    width: 100%;
+  }
+
+  .services-container {
+    width: 95%;
+  }
+
+  .sobre {
+    width: 30px;
+  }
+
+  .curiosity {
+    font-size: 16px;
+    line-height: 100px;
+    text-align: left;
+  }
+
+  .business-box {
+    margin-left: -50px;
+  }
+}
+
+/* tablet  900px*/
+@media (max-width: 900px) {
+  .navbar-items a {
+    font-size: 15px;
+  }
+
+  .main-banner {
+    width: 100%;
+  }
+
+  .main-banner h1 {
+    font-size: 40px;
+  }
+
+  .services-container {
+    margin-left: 20px;
+  }
+
+  .curiosity {
+    line-height: 70px;
+  }
+
+  .business-box p {
+    font-size: 30px;
+  }
+
+  .what {
+    display: flex;
+
+    margin-top: 110px;
+
+    margin-left: -180px;
+  }
+}
+
+/* celular 576px  */
+@media (max-width: 576px) {
+  .navbar-container {
+    width: 184%;
+  }
+
+  .main-banner {
+    width: 183%;
+  }
+
+  .skills {
+    margin-left: 190px;
+  }
+
+  li img {
+    margin-left: 50px;
+  }
+
+  .me {
+    width: 800px;
+  }
+}
